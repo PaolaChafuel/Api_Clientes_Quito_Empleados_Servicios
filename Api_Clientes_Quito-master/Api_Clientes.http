@@ -1,0 +1,36 @@
+@Api_Clientes_HostAddress = http://localhost:5007
+
+GET {{Api_Clientes_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+### LISTAR EMPLEADOS
+GET {{Api_Clientes_HostAddress}}/api/Empleados
+Accept: application/json
+
+### CREAR EMPLEADO
+POST {{Api_Clientes_HostAddress}}/api/Empleados
+Content-Type: application/json
+
+{
+  "nombres": "Juan",
+  "apellidos": "Perez",
+  "cargo": "Tecnico",
+  "telefono": "0999999999",
+  "email": "juan@example.com"
+}
+
+### LISTAR SERVICIOS
+GET {{Api_Clientes_HostAddress}}/api/Servicios
+Accept: application/json
+
+### CREAR SERVICIO
+POST {{Api_Clientes_HostAddress}}/api/Servicios
+Content-Type: application/json
+
+{
+  "nombre": "Mantenimiento preventivo",
+  "descripcion": "Revision general del equipo",
+  "precio": 35.50
+}
